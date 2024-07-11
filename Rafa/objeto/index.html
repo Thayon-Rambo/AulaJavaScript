@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./Assets/OIP.jfif" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <h2>CRUD de Produtos</h2>
+        <div id="productForm">
+            <label for="productName">Nome:</label>
+            <input type="text" id="productName" name="productName" >
+
+            <label for="productDescription">Descrição:</label>
+            <input type="text" id="productDescription" name="productDescription" >
+
+            <label for="productPrice">Valor:</label>
+            <input type="number" id="productPrice" name="productPrice" step="0.01" >
+
+            <div class="button-container">
+                <button onclick="cadastrar()" type="button" class="btnCadastrar" id="btnCadastrar">Cadastrar</button>
+                <button onclick="pesquisar()" type="button" class="btnPesquisar" id="btnPesquisar">Pesquisar</button>
+                <button onclick="editar()" type="button" class="btnEditar" id="btnEditar">Salvar</button>
+                <button onclick="deletar()" type="button" class="btnDeletar" id="btnDeletar">Deletar</button>
+                <button onclick="gerarFakes()" type="button" id="Fakesbtn">Fakes</button>
+            </div>
+        </div>
+    </div>
+    <script src="crud.js"></script>
+</body>
+</html>
